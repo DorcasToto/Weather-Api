@@ -17,6 +17,6 @@ def getWeather(search):
     with urllib.request.urlopen(get_weather_url) as url:
         getWeatherData = url.read()
         data = json.loads(getWeatherData)
-        rewq = json.dumps({"WeatherData": data})
+        rewq = json.dumps({"Weather": data})
         # print(data)
         return rewq
